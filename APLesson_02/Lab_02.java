@@ -8,7 +8,7 @@ public class Lab_02
 		
 		System.out.println(x + " multiplied by " + y + " is " + z);
 		
-		System.out.println("Lauren Scheg" + "\n1234 Penguin Circle" + "\nSouth Pole" + "\nAntarctica 96598");
+		System.out.println("Lauren Scheg" + "\n1234 Penguin Circle" + "\nSouth Pole 96598" + "\nAntarctica");
 		
 		int w = 40;
 		int l = 34;
