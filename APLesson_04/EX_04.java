@@ -16,7 +16,7 @@ public class EX_04
 		double time = kb.nextDouble();
 		
 		double amount = loan.calcLoan(interest, principal, number, time);
-		System.out.printf("Your total monthly payment amount is $%-20.2f", amount);
+		System.out.printf("Your total monthly payment amount is $%.2f", amount);
 	}
 	
 	public double calcLoan(double r, double p, double n, double t)

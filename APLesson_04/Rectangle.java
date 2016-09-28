@@ -24,6 +24,6 @@ public class Rectangle
 	
 	public static void print()
 	{
-		System.out.printf("Your rectangle is %10.5f ft around.", calcPerim());
+		System.out.printf("Your rectangle is %.5f ft around.", calcPerim());
 	}
 }
