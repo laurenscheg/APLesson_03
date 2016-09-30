@@ -14,13 +14,13 @@ public class Cube
 		print();
 	}
 	
-	public static double calcSurf()
+	public static void calcSurf()
 	{
-		return (6*side*side);
+		sa = (6*side*side);
 	}
 	
 	public static void print()
 	{
-		System.out.printf("The surface area of a cube with side %.5f is %.5f.", side, calcSurf());
+		System.out.println("The surface area of a cube with side " + side + " is " + sa + ".");
 	}
 }

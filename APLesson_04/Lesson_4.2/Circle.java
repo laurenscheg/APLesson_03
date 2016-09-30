@@ -14,13 +14,13 @@ public class Circle
 		print();
 	}
 	
-	public static double calcArea()
+	public static void calcArea()
 	{
-		return (3.14*r*r);
+		area = (3.14*r*r);
 	}
 	
 	public static void print()
 	{
-		System.out.printf("The area of a circle with radius %.5f is %.5f.", r, calcArea());
+		System.out.println("The area of a circle with radius " + r + " is " + area + ".");
 	}
 }
