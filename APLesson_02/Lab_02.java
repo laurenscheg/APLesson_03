@@ -8,8 +8,12 @@ public class Lab_02
 		
 		System.out.println(x + " multiplied by " + y + " is " + z);
 		
-	
-		System.out.println("Lauren Scheg" + "\n1234 Penguin Circle" + "\nSouth Pole 96598" + "\nAntarctica");
+		String name = Lauren Scheg
+		String address = 1234 Penguin Circle
+		String city = South Pole
+		String zip = 96598
+		String country = Antarctica
+		System.out.println("Lauren Scheg" + "\n" + "\nSouth Pole" + "\nAntarctica" + "\n");
 		
 		int w = 40;
 		int l = 34;
