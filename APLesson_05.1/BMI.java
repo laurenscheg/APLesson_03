@@ -2,36 +2,39 @@ import java.util.Scanner;
 public class BMI
 {
 	static String bmi;
+	static double bminumber;
 	public static void main(String[]args)
 	{
 		Scanner kb = new Scanner(System.in);
-		System.out.prdoubleln("What is your weight?");
-		double weight = keyboard.nextDouble();
+		System.out.println("What is your weight?");
+		double weight = kb.nextDouble();
 		
-		System.out.prdoubleln("What is your height?");
-		double height = keyboard.nextDouble();
+		System.out.println("What is your height?");
+		double height = kb.nextDouble();
+		bminumber = (weight * 703)/(height*height);
 		
-		System.out.printf("Your BMI(");
-		System.out.printf("You are ", );
+		calcBMI(bminumber);
+		System.out.println("Your BMI is " + bminumber);
+		System.out.println("You are " + bmi);
 	}
 	
-	public static double calcBMI()
+	public static String calcBMI(double bminumber)
 	{
-		double bminumber = (weight * 703)/(height*height);
-		String bmi = "";
+		bmi = "";
 		
 		if (bminumber >= 39.9)
-			bmi = "Morbidly Obese"
+			bmi = "Morbidly Obese";
 		else if (bminumber >= 35)
-			bmi = "Very Obese"
+			bmi = "Very Obese";
 		else if (bminumber >= 29.9)
-			bmi = "Obese"
+			bmi = "Obese";
 		else if (bminumber >= 25)
-			bmi = "Overweight"
+			bmi = "Overweight";
 		else if (bminumber >= 18.5)
-			bmi = "Normal"
-		else if (bminumber < 18.5)
-			bmi = "Underweight"
-		return bminumber;
+			bmi = "Normal";
+		else
+			bmi = "Underweight";
+		
+		return bmi;
 	}
 }
