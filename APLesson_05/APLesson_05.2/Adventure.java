@@ -45,6 +45,24 @@ public class Adventure
 			else if (answer2 == 2)
 			{
 				System.out.println("There are cats everywhere. This would be awesome, but you are allergic. Your face swells up and you can barely see.");
+				System.out.println("Do you: \nA. Take an antihistamine \nB. Hug the cats \nC. Yell at the cats \nD. Eat a cat ");
+				String answer4 = kb.next();
+				if (answer4.equals("A"))
+				{
+					System.out.println("Your allergic reaction subsides. You can pet the cats now. You win."); System.exit(0);
+				}
+				else if (answer4.equals("B"))
+				{
+					System.out.println("You are allergic you idiot. Your throat closes completely and you suffocate."); System.exit(0);
+				}
+				else if (answer4.equals("C"))
+				{
+					System.out.println("The cats are not amused. They scratch you to pieces."); System.exit(0);
+				}
+				else if (answer4.equals("D"))
+				{
+					System.out.println("Why would do that. That's just weird. You die of rabies."); System.exit(0);
+				}
 			}
 			else if (answer2 == 3)
 			{
@@ -77,4 +95,3 @@ public class Adventure
 		}
 	}
 }
-//System.out.println("");
