@@ -2,7 +2,8 @@ import java.util.Scanner;
 public class ReplaceAts
 {
 static String sentence;
-static int num;
+static String sent;
+
 
 	public static void main(String[]args)
 	{
@@ -10,22 +11,27 @@ static int num;
 		Scanner kb = new Scanner(System.in);
 		System.out.println("Enter a sentence: ");
 		sentence = kb.nextLine();
-		num = number;
 		
-		digits = 0;
-		average = 0;
+		
+		
 		replace();
-		System.out.println();
+		System.out.println(sent);
 	}
 	
 	public static void replace()
 	{
-		while (num)
+		sent = "";
+		int i = 0;
+		while (i < sentence.length())
 		{
-			digits++;
-			average = average + digits %10;
-			num /= 10;
+			Character x = sentence.charAt(i);
+			if (x.equals('a'))
+			{
+				x = '@';
+			}
+			sent = sent + x;
+			i++;
 		}
-		average = average/digits;
+		
 	}
 }	

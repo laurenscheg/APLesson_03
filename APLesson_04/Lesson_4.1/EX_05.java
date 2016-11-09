@@ -14,11 +14,11 @@ public class EX_05
 		double width = kb.nextDouble();
 		
 		double volume = box.calcVol(height, length, width);
-		System.out.printf("The volume is %-10.2f", volume);
+		System.out.printf("The volume is %.2f cubic feet", volume);
 	}
 
 	public double calcVol(double h, double l, double w)
 	{
-		return (h*l*w);
+		return ((h*l*w)*0.000578704);
 	}
 }

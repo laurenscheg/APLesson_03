@@ -21,6 +21,6 @@ public class EX_04
 	
 	public double calcLoan(double r, double p, double n, double t)
 	{
-		return p*(Math.pow((1+(r/n)),(n*t)));
+		return p*(Math.pow((1+(r/n)),(12*t)));
 	}
 }
