@@ -4,6 +4,7 @@ public class Center
 	static String word1;
 	static String word2;
 	static String word3;
+	static String word;
 
 	public static void main(String[]args)
 	{
@@ -16,19 +17,22 @@ public class Center
 		word3 = kb.next();
 		
 		makeCenter(word1);
-		System.out.println(word);
+		makeCenter(word2);
+		makeCenter(word3);
+		
 	}
 	
-	public static String makeCenter(String word)
+	public static void  makeCenter(String word4)
 	{
 	
-		if (word.length() >= 20)
+		if (word4.length() >= 20)
 		{
-			System.out.println(word);
+			System.out.println(word4);
 		}
 		else
 		{
-			return word = " " + " ";
+			word = " " + word4 + " ";
+			makeCenter(word);
 		}
-	}
+	} 
 }	
