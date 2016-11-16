@@ -11,11 +11,20 @@ public class ReverseWord
 		{
 			words[i] = kb.next();
 		}
-		
+		System.out.println("In order...");
 		for (String word : words)
 		{
-			System.out.print(word);
+			System.out.print("\n" + word);
 		}
-		
+		System.out.println("\nReversed...");
+		reverse(words);
+	}
+	
+	public static void reverse(String[] words)
+	{
+		for (int i = words.length-1; i >= 0; i--)
+		{
+			System.out.print("\n" + words[i]);
+		}
 	}
 }
