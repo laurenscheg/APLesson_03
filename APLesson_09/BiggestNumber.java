@@ -1,4 +1,4 @@
-public class GetOdds
+public class BiggestNumber
 {
 	public static void main(String[]args)
 	{
@@ -7,7 +7,7 @@ public class GetOdds
 		fillArray(num);
 		System.out.print("For the following numbers ");
 		printArray(num);
-		System.out.println("\n The odd numbers are " + getOdds(num));
+		System.out.println("\n The biggest number is " + getBiggest(num));
 	
 
 	}
@@ -29,17 +29,17 @@ public class GetOdds
 		}
 	}
 	
-	public static String getOdds(int[] num)
+	public static int getBiggest(int[] num)
 	{
-		String odds = "";
+		int max = 0;
 		for (int num2 : num) 
 		{
-			if (num2%2!=0)
+			if (num2 > max)
 			{
-				odds += num2 + " ";
+				max = num2;
 			}
 			
 		}
-		return odds;
+		return max;
 	}
 }	
