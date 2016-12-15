@@ -26,8 +26,8 @@ public class Divisor
 		{
 			for(int j = 0; j < nums[i].length; j++)
 			{
-				if(nums[i][j] % divisor == 0)
 				{
+				if(nums[i][j] % divisor == 0)
 					count++;
 				}
 			}
