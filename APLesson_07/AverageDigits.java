@@ -23,7 +23,7 @@ static int average;
 		while (num > 0)
 		{
 			digits++;
-			average = average + num%10;
+			average += (num%10);
 			num /= 10;
 		}
 		average = average/digits;
