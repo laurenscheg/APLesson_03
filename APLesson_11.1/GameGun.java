@@ -24,9 +24,9 @@ public class GameGun
 			}
 			if (choice.equals("S"))
 			{
-				shoot(shotCount);
+				System.out.println(shoot());
 			}
-			printClip(CLIPSIZE);
+			printClip();
 		}
 		
 		System.out.println("Out of Bullets!!!");
@@ -41,7 +41,7 @@ public class GameGun
 		}
 	}
 	
-	public static String shoot(int shotCount)
+	public static String shoot()
 	{
 		String response;
 		if (shotCount > 0)
@@ -61,7 +61,7 @@ public class GameGun
 	{
 		if (bulletCount >= CLIPSIZE)
 		{
-			bulletCount = bulletCount - CLIPSIZE;
+			bulletCount -= CLIPSIZE;
 			shotCount = CLIPSIZE;
 		}
 		else
@@ -77,14 +77,15 @@ public class GameGun
 		}
 	}
 	
-	public static String printClip(int CLIPSIZE)
+	public static void printClip()
 	{
 		String output = "";
+		System.out.println("Bullets:\t" + bulletCount + "\nClip:\t");
 		for(int i = 0; i < CLIPSIZE; i++)
 		{
 			output += clip[i];
 		}
-		return "Bullets:\t" + bulletCount + "\nClip:\t"+ output;
+		System.out.println(output);
 	}
 	
 }	
