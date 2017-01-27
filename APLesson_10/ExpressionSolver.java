@@ -17,40 +17,49 @@ public class ExpressionSolver
 	
 	public static ArrayList<String> doEquation(ArrayList<String> equation)
 	{
-		int i = 0; 
+		int x = 0; 
 		
-		while(i < equation.size())
+		while(x < equation.size())
 		{
 			
-			if(equation.get(i).equals("*") || equation.get(i).equals("/"))
+			if(equation.get(x).equals("*") || equation.get(x).equals("/"))
 			{
-				if(equation.get(i).equals("*"))
+				if(equation.get(x).equals("*"))
 				{
-					equation.set(i, "" + (Integer.parseInt(equation.get(i-1)) * (Integer.parseInt(equation.get(i+1)))));
+					equation.set(x, "" + (Integer.parseInt(equation.get(x-1)) * (Integer.parseInt(equation.get(x+1)))));
 				}
 				else
 				{
-					equation.set(i, "" + (Integer.parseInt(equation.get(i-1)) / (Integer.parseInt(equation.get(i+1)))));
+					equation.set(x, "" + (Integer.parseInt(equation.get(x-1)) / (Integer.parseInt(equation.get(x+1)))));
 				}
-				equation.remove(i-1);
-				equation.remove(i);
-			}	
-			if(equation.get(i).equals("+") || equation.get(i).equals("-"))
-			{
-				if(equation.get(i).equals("+"))
-				{
-					equation.set(i, "" + (Integer.parseInt(equation.get(i-1)) + (Integer.parseInt(equation.get(i+1)))));
-				}
-				else
-				{
-					equation.set(i, "" + (Integer.parseInt(equation.get(i-1)) - (Integer.parseInt(equation.get(i+1)))));
-				}
-				equation.remove(i-1);
-				equation.remove(i);
+				equation.remove(x-1);
+				equation.remove(x);
 			}
 			else
 			{
-				i++;
+				x++;
+			}
+		}
+		x=0;
+		
+		while (x < equation.size()) 
+		{
+			if(equation.get(x).equals("+") || equation.get(x).equals("-"))
+			{
+				if(equation.get(x).equals("+"))
+				{
+					equation.set(x, "" + (Integer.parseInt(equation.get(x-1)) + (Integer.parseInt(equation.get(x+1)))));
+				}
+				else
+				{
+					equation.set(x, "" + (Integer.parseInt(equation.get(x-1)) - (Integer.parseInt(equation.get(x+1)))));
+				}
+				equation.remove(x-1);
+				equation.remove(x);
+			}
+			else
+			{
+				x++;
 			}
 			
 		
