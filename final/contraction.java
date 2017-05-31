@@ -6,7 +6,167 @@ public class contraction
         {
             return "Please enter text.";
         }
-		
+		while (text.indexOf("arent ")>=0)
+		{
+			text = text.substring(0, text.indexOf("arent ")) + "aren’t " + text.substring(text.indexOf("arent ")+6,text.length());
+		}
+while (text.indexOf("Arent ")>=0)
+		{
+			text = text.substring(0, text.indexOf("Arent ")) + "Aren’t " + text.substring(text.indexOf("Arent ")+6,text.length());
+		}
+while (text.indexOf("cant ")>=0)
+		{
+			text = text.substring(0, text.indexOf("cant ")) + "can’t " + text.substring(text.indexOf("cant ")+5,text.length());
+		}
+while (text.indexOf("Cant ")>=0)
+		{
+			text = text.substring(0, text.indexOf("Cant ")) + "Can’t " + text.substring(text.indexOf("Cant ")+5,text.length());
+		}
+while (text.indexOf("couldve ")>=0)
+		{
+			text = text.substring(0, text.indexOf("couldve ")) + "could’ve " + text.substring(text.indexOf("couldve ")+8,text.length());
+		}
+while (text.indexOf("Couldve ")>=0)
+		{
+			text = text.substring(0, text.indexOf("Couldve ")) + "Could’ve " + text.substring(text.indexOf("Couldve ")+8,text.length());
+		}
+while (text.indexOf("couldnt ")>=0)
+		{
+			text = text.substring(0, text.indexOf("couldnt ")) + "couldn’t " + text.substring(text.indexOf("couldnt ")+8,text.length());
+		}
+while (text.indexOf("Couldnt ")>=0)
+		{
+			text = text.substring(0, text.indexOf("Couldnt ")) + "Couldn’t " + text.substring(text.indexOf("Couldnt ")+8,text.length());
+		}
+while (text.indexOf("didnt ")>=0)
+		{
+			text = text.substring(0, text.indexOf("didnt ")) + "didn’t " + text.substring(text.indexOf("didnt ")+6,text.length());
+		}
+while (text.indexOf("Didnt ")>=0)
+		{
+			text = text.substring(0, text.indexOf("Didnt ")) + "Didn’t " + text.substring(text.indexOf("Didnt ")+6,text.length());
+		}
+while (text.indexOf("doesnt ")>=0)
+		{
+			text = text.substring(0, text.indexOf("doesnt ")) + "doesn’t " + text.substring(text.indexOf("doesnt ")+7,text.length());
+		}
+while (text.indexOf("Doesnt ")>=0)
+		{
+			text = text.substring(0, text.indexOf("Doesnt ")) + "Doesn’t " + text.substring(text.indexOf("Doesnt ")+7,text.length());
+		}
+while (text.indexOf("dont ")>=0)
+		{
+			text = text.substring(0, text.indexOf("dont ")) + "don’t " + text.substring(text.indexOf("dont ")+5,text.length());
+		}
+while (text.indexOf("Dont ")>=0)
+		{
+			text = text.substring(0, text.indexOf("Dont ")) + "Don’t " + text.substring(text.indexOf("Dont ")+5,text.length());
+		}
+while (text.indexOf("hadnt ")>=0)
+		{
+			text = text.substring(0, text.indexOf("hadnt ")) + "hadn’t " + text.substring(text.indexOf("hadnt ")+6,text.length());
+		}
+while (text.indexOf("Hadnt ")>=0)
+		{
+			text = text.substring(0, text.indexOf("Hadnt ")) + "Hadn’t " + text.substring(text.indexOf("Hadnt ")+6,text.length());
+		}
+while (text.indexOf("hasnt ")>=0)
+		{
+			text = text.substring(0, text.indexOf("hasnt ")) + "hasn’t " + text.substring(text.indexOf("hasnt ")+6,text.length());
+		}
+while (text.indexOf("Hasnt ")>=0)
+		{
+			text = text.substring(0, text.indexOf("Hasnt ")) + "Hasn’t " + text.substring(text.indexOf("Hasnt ")+6,text.length());
+		}
+while (text.indexOf("havent ")>=0)
+		{
+			text = text.substring(0, text.indexOf("havent ")) + "haven’t " + text.substring(text.indexOf("havent ")+3,text.length());
+		}
+while (text.indexOf("Havent ")>=0)
+		{
+			text = text.substring(0, text.indexOf("Havent ")) + "Haven’t " + text.substring(text.indexOf("Havent ")+3,text.length());
+		}
+while (text.indexOf(" hed ")>=0)
+		{
+			text = text.substring(0, text.indexOf(" hed ")) + " he’d " + text.substring(text.indexOf(" hed ")+5,text.length());
+		}
+while (text.indexOf("Hed ")>=0)
+		{
+			text = text.substring(0, text.indexOf("Hed ")) + "He’d " + text.substring(text.indexOf("Hed ")+4,text.length());
+		}
+while (text.indexOf(" hell ")>=0)
+		{
+			text = text.substring(0, text.indexOf(" hell ")) + " he’ll " + text.substring(text.indexOf(" hell ")+6,text.length());
+		}
+while (text.indexOf("Hell ")>=0)
+		{
+			text = text.substring(0, text.indexOf("Hell ")) + "He’ll " + text.substring(text.indexOf("Hell ")+5,text.length());
+		}
+while (text.indexOf(" hes ")>=0)
+		{
+			text = text.substring(0, text.indexOf(" hes ")) + " he’s " + text.substring(text.indexOf(" hes ")+5,text.length());
+		}
+while (text.indexOf("Hes ")>=0)
+		{
+			text = text.substring(0, text.indexOf("Hes ")) + "He’s " + text.substring(text.indexOf("Hes ")+4,text.length());
+		}
+while (text.indexOf("howd ")>=0)
+		{
+			text = text.substring(0, text.indexOf("howd ")) + "how’d " + text.substring(text.indexOf("howd ")+5,text.length());
+		}
+while (text.indexOf("Howd ")>=0)
+		{
+			text = text.substring(0, text.indexOf("Howd ")) + "How’d " + text.substring(text.indexOf("Howd ")+5,text.length());
+		}
+while (text.indexOf("howll ")>=0)
+		{
+			text = text.substring(0, text.indexOf("howll ")) + "how’ll " + text.substring(text.indexOf("howll ")+6,text.length());
+		}
+while (text.indexOf("Howll ")>=0)
+		{
+			text = text.substring(0, text.indexOf("Howll ")) + "How’ll " + text.substring(text.indexOf("Howll ")+6,text.length());
+		}
+while (text.indexOf(" hows ")>=0)
+		{
+			text = text.substring(0, text.indexOf(" hows ")) + " how’s " + text.substring(text.indexOf(" hows ")+6,text.length());
+		}
+while (text.indexOf("Hows ")>=0)
+		{
+			text = text.substring(0, text.indexOf("Hows ")) + "How’s " + text.substring(text.indexOf("Hows ")+5,text.length());
+		}
+while (text.indexOf(" isnt ")>=0)
+		{
+			text = text.substring(0, text.indexOf(" isnt ")) + " isn’t " + text.substring(text.indexOf(" isnt ")+6,text.length());
+		}
+while (text.indexOf("Isnt ")>=0)
+		{
+			text = text.substring(0, text.indexOf("Isnt ")) + "Isn’t " + text.substring(text.indexOf("Isnt ")+5,text.length());
+		}
+while (text.indexOf(" itll ")>=0)
+		{
+			text = text.substring(0, text.indexOf(" itll ")) + " it’ll " + text.substring(text.indexOf(" itll ")+6,text.length());
+		}
+while (text.indexOf("Itll ")>=0)
+		{
+			text = text.substring(0, text.indexOf("Itll ")) + "It’ll " + text.substring(text.indexOf("Itll ")+5,text.length());
+		}
+while (text.indexOf(" its ")>=0)
+		{
+			text = text.substring(0, text.indexOf(" its ")) + " it’s " + text.substring(text.indexOf(" its ")+5,text.length());
+		}
+while (text.indexOf("Its ")>=0)
+		{
+			text = text.substring(0, text.indexOf("Its ")) + "It’s " + text.substring(text.indexOf("Its ")+4,text.length());
+		}
+while (text.indexOf("mightve ")>=0)
+		{
+			text = text.substring(0, text.indexOf("mightve ")) + "might’ve " + text.substring(text.indexOf("mightve ")+8,text.length());
+		}
+while (text.indexOf("Mightve ")>=0)
+		{
+			text = text.substring(0, text.indexOf("Mightve ")) + "Might’ve " + text.substring(text.indexOf("Mightve ")+8,text.length());
+		}
+
 		while (text.indexOf("Im ")>=0)
 		{
 			text = text.substring(0, text.indexOf("Im ")) + "I'm " + text.substring(text.indexOf("Im ")+3,text.length());

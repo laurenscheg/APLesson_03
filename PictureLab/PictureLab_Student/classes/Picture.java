@@ -183,13 +183,12 @@ public class Picture extends SimplePicture
 		Pixel topPixel = null;
 		Pixel bottomPixel = null;
 		int height = pixels.length;
-		int width = pixels[0].length;
-		for (int row = 0; row < pixels[0].length; row++)
+		for (int row = 0; row < height/2; row++)
 		{
-			for (int col = 0; col < width / 2; col++)
+			for (int col = 0; col < pixels[0].length; col++)
 			{
 				topPixel = pixels[row][col];
-				bottomPixel = pixels[row][width - 1 - col];
+				bottomPixel = pixels[height - 1 - row][col];
 				bottomPixel.setColor(topPixel.getColor());
 			}
 		} 
@@ -201,13 +200,12 @@ public class Picture extends SimplePicture
     Pixel topPixel = null;
     Pixel bottomPixel = null;
     int height = pixels.length;
-	int width = pixels[0].length;
-    for (int row = 0; row < pixels[0].length; row++)
+    for (int row = 0; row < height/2; row++)
     {
-      for (int col = 0; col < width / 2; col++)
+      for (int col = 0; col < pixels[0].length; col++)
       {
         topPixel = pixels[row][col];
-        bottomPixel = pixels[row][width - 1 - col];
+        bottomPixel = pixels[height - 1 - row][col];
         topPixel.setColor(bottomPixel.getColor());
       }
     } 
@@ -238,29 +236,17 @@ public class Picture extends SimplePicture
   
   public void mirrorArms()
   {
-	  int mirrorPoint1 = 20;
-	  Pixel leftPixel = null;
-	  Pixel rightPixel = null;
+	  int mirrorPoint = 202;
 	  Pixel bottomPixel = null;
 	  Pixel topPixel = null;
 	  Pixel[][] pixels = this.getPixels2D();
-	  for (int row = 158; row < mirrorPoint1; row++) 
+	  for (int row = 154; row < mirrorPoint; row++) 
 	  {
-		  for (int col = 100; col < 170; col++) 
+		  for (int col = 100; col < 305; col++) 
 			{ 
-			topPixel = pixels[row][col]; 
-			bottomPixel = pixels[mirrorPoint1 - row + mirrorPoint1][col]; bottomPixel.setColor(topPixel.getColor()); 
-			} 
-		} 
-		int mirrorPoint2 = 200; 
-		Pixel topPixel2 = null; 
-		Pixel bottomPixel2 = null; 
-		for (int row = 170; row < mirrorPoint2; row++) 
-		{ 
-			for (int col = 240; col < 295; col++) 
-			{ 
-				topPixel2 = pixels[row][col]; 
-				bottomPixel2 = pixels[mirrorPoint2 - row + mirrorPoint2][col]; bottomPixel2.setColor(topPixel2.getColor()); 
+				topPixel = pixels[row][col]; 
+				bottomPixel = pixels[mirrorPoint - row + mirrorPoint][col]; 
+				bottomPixel.setColor(topPixel.getColor()); 
 			} 
 		} 
 	}
@@ -401,12 +387,12 @@ public class Picture extends SimplePicture
   /* Main method for testing - each class in Java can have a main 
    * method 
    */
-  public static void main(String[] args) 
-  {
-    Picture beach = new Picture("beach.jpg");
-    beach.explore();
-    beach.zeroBlue();
-    beach.explore();
-  }
+  //public static void main(String[] args) 
+ // {
+  //  Picture beach = new Picture("beach.jpg");
+ //   beach.explore();
+  //  beach.negate();
+    //beach.explore();
+ // }
   
 }

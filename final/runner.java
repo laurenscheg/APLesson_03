@@ -6,7 +6,7 @@ public class runner
     {
         punctuation punkd = new punctuation();
 		capitalization capybara = new capitalization();
-		conjunction conair = new conjunction();
+		contraction conair = new contraction();
 
         System.out.println ("Enter your text: ");
 		

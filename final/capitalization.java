@@ -460,6 +460,14 @@ public class capitalization
 		{
 			text = text.substring(0, text.indexOf(" id ")) + " Id " + text.substring(text.indexOf(" id ")+4,text.length());
 		}
+		while (text.indexOf(" i've ")>0)
+		{
+			text = text.substring(0, text.indexOf(" i've ")) + " I've" + text.substring(text.indexOf(" i've ")+6,text.length());
+		}
+		while (text.indexOf(" ive ")>0)
+		{
+			text = text.substring(0, text.indexOf(" ive ")) + " Ive" + text.substring(text.indexOf(" ive ")+5,text.length());
+		}
 
 		return text;	
 	}
