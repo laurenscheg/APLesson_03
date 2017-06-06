@@ -145,8 +145,13 @@ public static void testMyCollage()
     //testCollage();
     //testCopy();
 	testMirrorGull();
+<<<<<<< HEAD
 	testCopy2();
 	testMyCollage();
+=======
+	  testCopy2();
+	  testMyCollage();
+>>>>>>> origin/master
     testEdgeDetection();
     //testEdgeDetection2();
     //testChromakey();
