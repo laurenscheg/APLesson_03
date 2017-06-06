@@ -7,18 +7,23 @@ public class runner
         punctuation punkd = new punctuation();
 		capitalization capybara = new capitalization();
 		contraction conair = new contraction();
-
-        System.out.println ("Enter your text: ");
+		shortcuts shorty = new shortcuts();
 		
-        Scanner in = new Scanner (System.in);
-        String t = in.nextLine();
+		System.out.println(shorty.getCuts());
+
+        System.out.println("Enter your text: ");
+		
+        Scanner kb = new Scanner (System.in);
+        String t = kb.nextLine();
 		String newt = "";
 
         while (!t.equals("exit"))
         {
-            System.out.println (conair.getCorrection(capybara.getCorrection(punkd.getCorrection(t))));
+			String wow = (shorty.getCorrection(t));
 			
-            t = in.nextLine();
+            System.out.println(conair.getCorrection(capybara.getCorrection(punkd.getCorrection(wow))));
+			
+            t = kb.nextLine();
         }
     }
 

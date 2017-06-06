@@ -432,39 +432,39 @@ public class capitalization
 		}
 		
 		//i
-		while (text.indexOf(" i ")>0)
+		while (text.indexOf(" i ")>=0)
 		{
 			text = text.substring(0, text.indexOf(" i ")) + " I " + text.substring(text.indexOf(" i ")+3,text.length());
 		}
-		while (text.indexOf(" i'm ")>0)
+		while (text.indexOf(" i'm ")>=0)
 		{
 			text = text.substring(0, text.indexOf(" i'm ")) + " I'm " + text.substring(text.indexOf(" i'm ")+5,text.length());
 		}
-		while (text.indexOf(" im ")>0)
+		while (text.indexOf(" im ")>=0)
 		{
 			text = text.substring(0, text.indexOf(" im ")) + " Im " + text.substring(text.indexOf(" im ")+4,text.length());
 		}
-		while (text.indexOf(" i'll ")>0)
+		while (text.indexOf(" i'll ")>=0)
 		{
 			text = text.substring(0, text.indexOf(" i'll ")) + " I'll" + text.substring(text.indexOf(" i'll ")+6,text.length());
 		}
-		while (text.indexOf(" ill ")>0)
+		while (text.indexOf(" ill ")>=0)
 		{
 			text = text.substring(0, text.indexOf(" ill ")) + " Ill" + text.substring(text.indexOf(" ill ")+5,text.length());
 		}
-		while (text.indexOf(" i'd ")>0)
+		while (text.indexOf(" i'd ")>=0)
 		{
 			text = text.substring(0, text.indexOf(" i'd ")) + " I'd " + text.substring(text.indexOf(" i'd ")+5,text.length());
 		}
-		while (text.indexOf(" id ")>0)
+		while (text.indexOf(" id ")>=0)
 		{
 			text = text.substring(0, text.indexOf(" id ")) + " Id " + text.substring(text.indexOf(" id ")+4,text.length());
 		}
-		while (text.indexOf(" i've ")>0)
+		while (text.indexOf(" i've ")>=0)
 		{
 			text = text.substring(0, text.indexOf(" i've ")) + " I've" + text.substring(text.indexOf(" i've ")+6,text.length());
 		}
-		while (text.indexOf(" ive ")>0)
+		while (text.indexOf(" ive ")>=0)
 		{
 			text = text.substring(0, text.indexOf(" ive ")) + " Ive" + text.substring(text.indexOf(" ive ")+5,text.length());
 		}
