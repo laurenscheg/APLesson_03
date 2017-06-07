@@ -118,6 +118,13 @@ public static void testMyCollage()
     swan.edgeDetection(10);
     swan.explore();
   }
+   
+public static void testEdgeDetection2()
+  {
+    Picture swan = new Picture("swan.jpg");
+    swan.edgeDetection2(10);
+    swan.explore();
+  }
   
   
   /** Main method for testing.  Every class can have a main
@@ -144,14 +151,8 @@ public static void testMyCollage()
     //testMirrorDiagonal();
     //testCollage();
     //testCopy();
-	testMirrorGull();
-<<<<<<< HEAD
-	testCopy2();
-	testMyCollage();
-=======
-	  testCopy2();
-	  testMyCollage();
->>>>>>> origin/master
+	//testMirrorGull();
+	//testMyCollage();
     testEdgeDetection();
     //testEdgeDetection2();
     //testChromakey();
