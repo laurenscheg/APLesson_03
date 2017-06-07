@@ -337,11 +337,14 @@ public class Picture extends SimplePicture
 	caterpillar.negate();
 	Picture flowerBlue = new Picture(flower1);
 	flowerBlue.zeroBlue();
-	this.copy(beach,100,0);
-	this.copy(flower1,500,0);
+	this.copy(beach,0,0);
+	this.copy(flower1,100,0);
+	this.copy(beach,200,0);
 	Picture beachMirror = new Picture(beach);
 	beachMirror.mirrorVertical();
-	this.copy(beachMirror,400,0);
+	this.copy(beachMirror,300,0);
+	this.copy(flower1,400,0);
+	this.copy(beachMirror,500,0);
   }
 	
 
