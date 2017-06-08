@@ -148,8 +148,13 @@ public static void testEdgeDetection2()
     //testCopy();
 	//testMirrorGull();
 	//testMyCollage();
+<<<<<<< HEAD
 //testEdgeDetection();
    // testEdgeDetection2();
+=======
+    testEdgeDetection();
+    //testEdgeDetection2();
+>>>>>>> origin/master
     //testChromakey();
     //testEncodeAndDecode();
     //testGetCountRedOverValue(250);

@@ -192,11 +192,11 @@ public class contraction
 		}
 		while (text.indexOf("shouldnt ")>=0)
 		{
-			text = text.substring(0, text.indexOf("shouldnt ")) + "should'nt " + text.substring(text.indexOf("shouldnt ")+9,text.length());
+			text = text.substring(0, text.indexOf("shouldnt ")) + "shouldn't " + text.substring(text.indexOf("shouldnt ")+9,text.length());
 		}
 		while (text.indexOf("Shouldnt ")>=0)
 		{
-			text = text.substring(0, text.indexOf("Shouldnt ")) + "Should'nt " + text.substring(text.indexOf("Shouldnt ")+9,text.length());
+			text = text.substring(0, text.indexOf("Shouldnt ")) + "Shouldn't " + text.substring(text.indexOf("Shouldnt ")+9,text.length());
 		}
 		while (text.indexOf("somebodys ")>=0)
 		{
@@ -712,11 +712,11 @@ public class contraction
 		}
 		while (text.indexOf("shouldnt.")>=0)
 		{
-			text = text.substring(0, text.indexOf("shouldnt.")) + "should'nt." + text.substring(text.indexOf("shouldnt.")+10,text.length());
+			text = text.substring(0, text.indexOf("shouldnt.")) + "shouldn't." + text.substring(text.indexOf("shouldnt.")+10,text.length());
 		}
 		while (text.indexOf("Shouldnt.")>=0)
 		{
-			text = text.substring(0, text.indexOf("Shouldnt.")) + "Should'nt." + text.substring(text.indexOf("Shouldnt.")+10,text.length());
+			text = text.substring(0, text.indexOf("Shouldnt.")) + "Shouldn't." + text.substring(text.indexOf("Shouldnt.")+10,text.length());
 		}
 		while (text.indexOf("somebodys.")>=0)
 		{

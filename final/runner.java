@@ -8,6 +8,7 @@ public class runner
 		capitalization capybara = new capitalization();
 		contraction conair = new contraction();
 		shortcuts shorty = new shortcuts();
+		spelling smack = new spelling();
 		
 		System.out.println(shorty.getCuts());
 
@@ -21,7 +22,7 @@ public class runner
         {
 			String wow = (shorty.getCorrection(t));
 			
-            System.out.println(conair.getCorrection(capybara.getCorrection(punkd.getCorrection(wow))));
+            System.out.println(smack.getCorrection(conair.getCorrection(capybara.getCorrection(punkd.getCorrection(wow)))));
 			
             t = kb.nextLine();
         }
