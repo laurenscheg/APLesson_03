@@ -90,12 +90,7 @@ public class PictureTester
     seagull.mirrorGull();
     seagull.explore();
   }
-public static void testCopy2()
-  {
-    Picture canvas = new Picture("640x480.jpg");
-    canvas.copy2();
-    canvas.explore();
-  }
+
   
   /** Method to test the collage method */
   public static void testCollage()
@@ -116,6 +111,13 @@ public static void testMyCollage()
   {
     Picture swan = new Picture("swan.jpg");
     swan.edgeDetection(10);
+    swan.explore();
+  }
+   
+public static void testEdgeDetection2()
+  {
+    Picture swan = new Picture("swan.jpg");
+    swan.edgeDetection2(10);
     swan.explore();
   }
   
@@ -144,16 +146,10 @@ public static void testMyCollage()
     //testMirrorDiagonal();
     //testCollage();
     //testCopy();
-	testMirrorGull();
-<<<<<<< HEAD
-	testCopy2();
-	testMyCollage();
-=======
-	  testCopy2();
-	  testMyCollage();
->>>>>>> origin/master
-    testEdgeDetection();
-    //testEdgeDetection2();
+	//testMirrorGull();
+	//testMyCollage();
+//testEdgeDetection();
+   // testEdgeDetection2();
     //testChromakey();
     //testEncodeAndDecode();
     //testGetCountRedOverValue(250);
