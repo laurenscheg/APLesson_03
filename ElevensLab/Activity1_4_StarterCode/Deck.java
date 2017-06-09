@@ -76,7 +76,11 @@ public class Deck
 	 */
 	public void shuffle() 
 	{
+<<<<<<< HEAD
 		for (int k = cards.size() - 1; k > 0; k--) 
+=======
+		for (int k = cards.size - 1; k > 0; k--) 
+>>>>>>> origin/master
 		{
 			int r = (int) (Math.random() * k);
 			Card newDeck = cards.get(r);

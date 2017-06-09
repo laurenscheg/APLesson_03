@@ -30,7 +30,11 @@ public class DeckTester
  
 	/////////////////full deck
 		String[] rank = {"Ace", "Two", "Three", "Four", "Five", "Six", "Seven", "Eight", "Nine", "Ten", "Jack", "Queen", "King"};
+<<<<<<< HEAD
 		String[] suit = {"Spades", "Hearts", "Diamonds", "Clubs"};
+=======
+		String[] suit = {"Spades", "Hearts", "Diamonds", "Clubs};
+>>>>>>> origin/master
 		int[] value = {1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13};
 		Deck deck = new Deck(rank, suit, value);
 		//System.out.println(deck);

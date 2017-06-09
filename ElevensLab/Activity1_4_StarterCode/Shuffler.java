@@ -65,12 +65,20 @@ public class Shuffler
 			k += 2;
 		}
  	 	k = 1;
+<<<<<<< HEAD
   		for (; j < values.length; j++) 
+=======
+  		for (int j = 0; j < values.length; j++) 
+>>>>>>> origin/master
 		{
 			shuffled[j] = values[k];
 			k += 2;
 		}
+<<<<<<< HEAD
 		for (j = 0; j < values.length; j++) 
+=======
+		for (int j = 0; j < values.length; j++) 
+>>>>>>> origin/master
 		{
 			values[j] = shuffled[j];
 		}	
@@ -92,7 +100,7 @@ public class Shuffler
 	{
 		for (int k = values.length - 1; k > 0; k--) 
 		{
-			int r = (int) (Math.random() * k);
+			int r = (int) (Math.random() * (k+1));
 			int newDeck = values[r];
 			values[r] = values[k];
 			values[k] = newDeck;
