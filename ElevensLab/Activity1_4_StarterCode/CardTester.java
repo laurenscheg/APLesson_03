@@ -10,9 +10,9 @@ public class CardTester
 	 */
 	public static void main(String[] args) 
 	{
-		Card card1 = new Card("Spades", "Ace", 1);
-		Card card2 = new Card("Heart", "4", 4);
-		Card card3 = new Card("Spades", "Ace", 1);
+		Card card1 = new Card("Ace", "Spades", 1);
+		Card card2 = new Card("4", "Heart", 4);
+		Card card3 = new Card("Ace", "Spades", 1);
 		
 				
 		System.out.println("Do card1 and card2 match? " + card1.matches(card2));
