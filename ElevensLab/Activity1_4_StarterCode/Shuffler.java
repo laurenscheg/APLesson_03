@@ -1,7 +1,8 @@
 /**
  * This class provides a convenient way to test shuffling methods.
  */
-public class Shuffler {
+public class Shuffler 
+{
  
 	/**
 	 * The number of consecutive shuffle steps to be performed in each call
@@ -14,7 +15,8 @@ public class Shuffler {
 	 * Tests shuffling methods.
 	 * @param args is not used.
 	 */
-	public static void main(String[] args) {
+	public static void main(String[] args) 
+	{
 		System.out.println("Results of " + SHUFFLE_COUNT + " consecutive perfect shuffles:");
 		int[] values1 = {0, 1, 2, 3};
 		for (int j = 1; j <= SHUFFLE_COUNT; j++) 
@@ -51,24 +53,29 @@ public class Shuffler {
 	 * the cards in one half with the cards in the other.
 	 * @param values is an array of integers simulating cards to be shuffled.
 	 */
-	public static int[] perfectShuffle(int[] values) 
+	public static void perfectShuffle(int[] values) 
 	{
-		int[] shuffled = new int[52];
+		int[] shuffled = new int[values.length];
   		int halfway = (values.length) / 2;
-  		int k = 0;
-  		for (int j = 0; j < halfway; j++) 
+  		int k = 0; 
+		int j = 0;
+  		for (j=0; j < halfway; j++) 
 		{
-			shuffled[k] = values[j];
+			shuffled[j] = values[k];
 			k += 2;
 		}
  	 	k = 1;
-  		for (int j = halfway; j <= values.length; j++) 
+  		for (; j < values.length; j++) 
 		{
-			shuffled[k] = values[j];
+			shuffled[j] = values[k];
 			k += 2;
 		}
-		return shuffled;
+		for (j = 0; j < values.length; j++) 
+		{
+			values[j] = shuffled[j];
+		}	
 	}
+	
  
 	/**
 	 * Apply an "efficient selection shuffle" to the argument.
