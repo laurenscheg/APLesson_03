@@ -33,13 +33,13 @@ public class Deck
 	public Deck(String[] ranks, String[] suits, int[] values) 
 	{
 		this.cards = new ArrayList<Card>();
-        for (int i = 0; i < ranks.length; i++) 
+       		for (int i = 0; i < ranks.length; i++) 
 		{
-            Card card1 = new Card(ranks[i], suits[i], values[i]);
-            cards.add(card1);
-        }
-        size = cards.size();
-        shuffle();
+           		Card card1 = new Card(ranks[i], suits[i], values[i]);
+           		cards.add(card1);
+       		}
+        	size = cards.size();
+        	shuffle();
 	}
  
  
@@ -81,12 +81,14 @@ public class Deck
 	 * @return the card just dealt, or null if all the cards have been
 	 *         previously dealt.
 	 */
-	public Card deal() {
-	if(isEmpty()){
-	return null;
-	}
-	size--;
-	return cards.get(size);
+	public Card deal() 
+	{
+		if(isEmpty())
+		{
+			return null;
+		}
+		size--;
+		return cards.get(size);
 	}
  
 	/**
