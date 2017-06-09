@@ -29,12 +29,12 @@ public class DeckTester
 		 System.out.println("What card is dealt? " + deck3.deal());
  
 	/////////////////full deck
-		String[] r = {"Ace", "Two", "Three", "Four", "Five", "Six", "Seven", "Eight", "Nine", "Ten", "Jack", "Queen", "King"};
-		String[] s = {"Clubs", "Diamonds", "Spades", "Hearts"};
-		int[] v = {1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13};
-		Deck deck = new Deck(r, s, v);
+		String[] rank = {"Ace", "Two", "Three", "Four", "Five", "Six", "Seven", "Eight", "Nine", "Ten", "Jack", "Queen", "King"};
+		String[] suit = {"Spades", "Hearts", "Diamonds", "Clubs};
+		int[] value = {1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13};
+		Deck deck = new Deck(rank, suit, value);
 		//System.out.println(deck);
-		System.out.println("The whole deck's dealt card is: " + deck.deal());
+		System.out.println("What card is dealt? " + deck.deal());
 		
 	}
 
