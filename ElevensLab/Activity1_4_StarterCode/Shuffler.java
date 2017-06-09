@@ -65,20 +65,15 @@ public class Shuffler
 			k += 2;
 		}
  	 	k = 1;
-<<<<<<< HEAD
-  		for (; j < values.length; j++) 
-=======
-  		for (int j = 0; j < values.length; j++) 
->>>>>>> origin/master
+
+
+		for (; j < values.length; j++)
 		{
 			shuffled[j] = values[k];
 			k += 2;
 		}
-<<<<<<< HEAD
+
 		for (j = 0; j < values.length; j++) 
-=======
-		for (int j = 0; j < values.length; j++) 
->>>>>>> origin/master
 		{
 			values[j] = shuffled[j];
 		}	
