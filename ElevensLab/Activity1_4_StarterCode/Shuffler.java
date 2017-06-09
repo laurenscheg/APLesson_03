@@ -1,7 +1,8 @@
 /**
  * This class provides a convenient way to test shuffling methods.
  */
-public class Shuffler {
+public class Shuffler 
+{
  
 	/**
 	 * The number of consecutive shuffle steps to be performed in each call
@@ -14,7 +15,8 @@ public class Shuffler {
 	 * Tests shuffling methods.
 	 * @param args is not used.
 	 */
-	public static void main(String[] args) {
+	public static void main(String[] args) 
+	{
 		System.out.println("Results of " + SHUFFLE_COUNT + " consecutive perfect shuffles:");
 		int[] values1 = {0, 1, 2, 3};
 		for (int j = 1; j <= SHUFFLE_COUNT; j++) 
