@@ -35,10 +35,12 @@ public class Deck
 		this.cards = new ArrayList<Card>();
        		for (int i = 0; i < ranks.length; i++) 
 		{
-           		Card card1 = new Card(ranks[i], suits[i], values[i]);
-           		cards.add(card1);
+           		for(int j = 0; j < suits.length; j++)
+			{	
+				this.cards.add(new Card(ranks[i], suits[j], values[i]));
+			}
        		}
-        	size = cards.size();
+        	this.size = this.cards.size();
         	shuffle();
 	}
  
@@ -49,7 +51,14 @@ public class Deck
 	 */
 	public boolean isEmpty() 
 	{
-		return cards.size() == 0;
+		if (this.cards.size()==0)
+		{
+			return true;
+		}
+		else
+		{	
+			return false;
+		}	
 	}
  
 	/**
@@ -58,7 +67,7 @@ public class Deck
 	 */
 	public int size() 
 	{
-		return size();
+		return this.cards.size();
 	}
  
 	/**
@@ -67,12 +76,12 @@ public class Deck
 	 */
 	public void shuffle() 
 	{
-		for (int k = values.length - 1; k > 0; k--) 
+		for (int k = cards.size - 1; k > 0; k--) 
 		{
 			int r = (int) (Math.random() * k);
-			int newDeck = values[r];
-			values[r] = values[k];
-			values[k] = newDeck;
+			Card newDeck = cards.get(r);
+			cards.set(r, cards.get(k));
+			cards.set(k, newDeck);
 		}
 	}
  
@@ -83,12 +92,12 @@ public class Deck
 	 */
 	public Card deal() 
 	{
-		if(isEmpty())
+		this.size = this.size - 1;
+       		if (this.size > 0) 
 		{
-			return null;
-		}
-		size--;
-		return cards.get(size);
+            		return this.cards.get(this.size);
+        	}
+        	return null;
 	}
  
 	/**
